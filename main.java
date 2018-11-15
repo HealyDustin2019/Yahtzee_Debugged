@@ -8,19 +8,20 @@ public class Main
         int c = rand.nextInt(6)+1;
         int d = rand.nextInt(6)+1;
         int e = rand.nextInt(6)+1;
-        System.out.println("Aces            "+aces(5,2,2,2,5));
-       System.out.println("Twos            "+ twos(5,2,2,2,5));
-       System.out.println("Threes          "+threes(5,2,2,2,5));
-       System.out.println("Fours           "+fours(5,2,2,2,5));
-       System.out.println("Fives           "+fives(5,2,2,2,5));
-       System.out.println("Sixes           "+sixes(5,2,2,2,5));
-       System.out.println("3 of a Kind     "+threeofakind(5,2,2,2,5));
-       System.out.println("4 of a Kind     "+fourofakind(5,2,2,2,5));
-       System.out.println("Full House      "+fullhouse(5,2,2,2,5));
-       System.out.println("Small Straight  "+smallstraight(5,2,2,2,5));
-       System.out.println("Large Straight  "+largestraight(5,2,2,2,5));
-       System.out.println("Yahtzee         "+yahtzee(5,2,2,2,5));
-       System.out.print("Chance          "+chance(5,2,2,2,5));
+        System.out.println(" * "+a+" * "+b+" * "+c+" * "+d+" * "+e+" * \n");
+        System.out.println("Aces            "+aces(a,b,c,d,e));
+       System.out.println("Twos            "+ twos(a,b,c,d,e));
+       System.out.println("Threes          "+threes(a,b,c,d,e));
+       System.out.println("Fours           "+fours(a,b,c,d,e));
+       System.out.println("Fives           "+fives(a,b,c,d,e));
+       System.out.println("Sixes           "+sixes(a,b,c,d,e));
+       System.out.println("3 of a Kind     "+threeofakind(a,b,c,d,e));
+       System.out.println("4 of a Kind     "+fourofakind(a,b,c,d,e));
+       System.out.println("Full House      "+fullhouse(a,b,c,d,e));
+       System.out.println("Small Straight  "+smallstraight(a,b,c,d,e));
+       System.out.println("Large Straight  "+largestraight(a,b,c,d,e));
+       System.out.println("Yahtzee         "+yahtzee(a,b,c,d,e));
+       System.out.print("Chance          "+chance(a,b,c,d,e));
 	}
 	public static int aces(int A, int B, int C, int D, int E) {
          int Score;
@@ -60,13 +61,13 @@ public static int twos(int a, int b, int c, int d, int e){
          }if(b== 2){
              numTwos= numTwos + 1;
          }if(c== 2){
-             numTwos = numTwos +1;
+             numTwos = numTwos + 1;
          }if(d== 2){
-             numTwos = numTwos +1;
+             numTwos = numTwos + 1;
          }if(e== 2) {
              numTwos = numTwos + 1;
          }
-         int totalTwos = numTwos*6;
+         int totalTwos = numTwos*2;
          return totalTwos;
      }
 
